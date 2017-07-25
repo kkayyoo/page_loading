@@ -34,9 +34,9 @@
   </head>
   <body>
 
-    <div class="loading">
+    <!-- <div class="loading">
         <div class="loader"></div>
-    </div>
+    </div> -->
 
     <div class="image">
       <img src="https://static.pexels.com/photos/5317/food-salad-restaurant-person.jpg" alt="">
@@ -52,7 +52,11 @@
         (function(){
 
             $(function(){
-              // loading element disappear in 3 sec
+
+              //remove loading element from Html code, add it to DOM by js
+                var loading = '<div class="loading"><div class="loader"></div></div>'
+                $("body").append(loading);
+
                 setInterval(function(){
                     $('.loading').fadeOut();
                 }, 3000);

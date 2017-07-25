@@ -52,13 +52,13 @@
         (function(){
             // page loading state change events
             document.onreadystatechange = function(){
-                //console.log(document.readyState); return current document status
+                console.log(document.readyState); //return current document status
                 //1.uninitalized
                 //2.loading
                 //3.interactive
-                //4.complate
-                if(document.readyState == "complate") {
-                    $('loading').fadeOut();
+                //4.complete
+                if(document.readyState == "complete") {
+                    $('.loading').fadeOut();
                 }
             };
 
